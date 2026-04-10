@@ -1,4 +1,5 @@
-package com.simonjaimesmoncayo.exploraapp.ui.theme
+package com.simonjaimesmoncayo.exploreapp.ui.theme
+
 
 import androidx.compose.ui.graphics.Color
 
