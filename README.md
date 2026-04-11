@@ -1,4 +1,4 @@
-# Explora App
+# Explora Colombia App
 # Autor
 **Simon Andres Jaimes Moncayo**
 
