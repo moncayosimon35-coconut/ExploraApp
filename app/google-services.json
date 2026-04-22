@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "759178293477",
+    "project_id": "loginfirebase-acc12",
+    "storage_bucket": "loginfirebase-acc12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759178293477:android:3e28f5db3c0c9169ffa40c",
+        "android_client_info": {
+          "package_name": "com.simonjaimesmoncayo.exploracolombiaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDgwY6J_TI65VZt4Ss_K6MVzVrzKlSQ30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
