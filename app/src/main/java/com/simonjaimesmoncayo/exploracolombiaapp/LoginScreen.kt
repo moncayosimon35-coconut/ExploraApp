@@ -125,6 +125,8 @@ fun LoginScreen(
                     placeholder = { Text("nombre@ejemplo.com", color = Color.Gray) },
                     leadingIcon = { Icon(Icons.Default.Email, contentDescription = null, tint = Color.Gray) },
                     colors = TextFieldDefaults.colors(
+                        focusedTextColor = Color.Black,
+                        unfocusedTextColor = Color.Black,
                         focusedContainerColor = inputBg,
                         unfocusedContainerColor = inputBg,
                         focusedIndicatorColor = Color.Transparent,
@@ -168,6 +170,8 @@ fun LoginScreen(
                         autoCorrect = false,
                         keyboardType = KeyboardType.Password),
                     colors = TextFieldDefaults.colors(
+                        focusedTextColor = Color.Black,
+                        unfocusedTextColor = Color.Black,
                         focusedContainerColor = inputBg,
                         unfocusedContainerColor = inputBg,
                         focusedIndicatorColor = Color.Transparent,

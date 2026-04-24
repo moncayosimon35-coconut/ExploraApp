@@ -42,14 +42,13 @@ class MainActivity : ComponentActivity() {
                     composable(route = "register") {
                         RegisterScreen(
                             onRegisterSuccess = {
-                                myNavController.navigate("login") {
-                                    popUpTo("login") { inclusive = true }
+                                // navegar al home y limpiar el historial
+                                myNavController.navigate("home") {
+                                    popUpTo(0) { inclusive = true } // El popUpTo(0) limpia TODAS las pantallas previas
                                 }
                             },
                             onNavigateToLogin = {
-                                myNavController.navigate("login") {
-                                    popUpTo("login") { inclusive = true }
-                                }
+                                myNavController.navigate("login")
                             },
                             onBackClick = {
                                 myNavController.popBackStack()
@@ -58,7 +57,7 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable(route = "home") {
-                        // Tu pantalla de Home vacía por ahora
+                        // pantalla de Home vacía por ahora
                         Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
                             Text("¡Bienvenido a Explora Colombia!")
                         }
