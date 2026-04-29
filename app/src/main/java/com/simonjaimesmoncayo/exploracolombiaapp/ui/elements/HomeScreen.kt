@@ -26,7 +26,7 @@ fun HomeScreen(onClickAddTouristicPlace: () -> Unit) {
             TopAppBar(title = { Text(text = "Explora Colombia") })
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = {onClickAddTouristicPlace}) {
+            FloatingActionButton(onClick = onClickAddTouristicPlace) {
                 Icon(imageVector = Icons.Default.Add, contentDescription = null)
             }
         }
@@ -38,6 +38,15 @@ fun HomeScreen(onClickAddTouristicPlace: () -> Unit) {
         ) {
 
             Text(text = "Bienvenido a la aplicación", modifier = Modifier.padding(16.dp))
+            Button(
+                onClick = { /* Sin acción */ },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFE53935)) // Color rojo visual
+            ) {
+                Text(text = "Cerrar sesión", color = Color.White)
+            }
         }
     }
 }
