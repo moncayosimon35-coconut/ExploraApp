@@ -77,12 +77,23 @@ class MainActivity : ComponentActivity() {
                     }
 
                     composable(route = "home") {
-                        HomeScreen(onClickAddTouristicPlace = {
-                            myNavController.navigate(route = "add_touristic_place")
-                        })
+                        HomeScreen(
+                            onClickAddTouristicPlace = {
+                                myNavController.navigate("add_touristic_place")
+                            },
+                            onLogout = { // funcion para salir de sesion
+                                myNavController.navigate("login") {
+                                    popUpTo("home") { inclusive = true }
+                                }
+                            }
+                        )
                     }
                     composable(route = "add_touristic_place") {
-                        AddTouristicPlaceScreen()
+                        AddTouristicPlaceScreen(
+                            onBackClick = {
+                                myNavController.popBackStack()
+                            }
+                        )
                     }
 
 
